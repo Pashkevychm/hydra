@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Кошик</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
+        <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
             
@@ -25,6 +26,17 @@
                 <a class="nav-link" href="shopping_card.html">Shopping card</a>
                 </li>
                 <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                </a>
+                <ul class="dropdown-menu">
+                    <a class="dropdown-item" href="index.html">Analgesics</a>
+                    <a class="dropdown-item" href="index.html">Antibiotics</a>   
+                    <a class="dropdown-item" href="index.html">Antihypertensives</a>
+                    <a class="dropdown-item" href="index.html">Antidepressants</a>
+                    <a class="dropdown-item" href="index.html">Antivirals</a>
+                    <a class="dropdown-item" href="index.html">All</a>
+                </ul>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -36,19 +48,21 @@
             </form>
             </div>
         </div>
-    </nav>
-
     </header>
+
     <main class="container">
-        <div class="cart-product">
-            <h3>Товар</h3>
-            <div class="count-box">
-                <p>Кількість: </p>
-                <input type="number" id="count-product-1">
-            </div>
-            <p class="total-pruduct-price"><span>1200</span> UAH</p>
+        <h2 class="name-page">Ваш кошик</h2>
+        
+        <div class="cart-products">
         </div>
-        <p>загальна ціна: <span>1200</span> UAH</p>
+
+        <div class="order-container">
+            <h4 class="name-total">Загальна ціна: <span class="total-price-display">0 грн</span></h4>
+            <button type="button" id="order-btn" class="order-btn">Замовити</button>
+        </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>
