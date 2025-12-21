@@ -1,3 +1,4 @@
+
 let products=[
     {
         id:1,
@@ -16,7 +17,7 @@ let products=[
     {
         id:3,
         name:"Парацетамол",
-        image:"images/news_163.jpg",
+        image:"images/999_3_10.jpg",
         type:"analgesic",
         price:101
     },
@@ -47,11 +48,28 @@ let products=[
         image:"images/26059_lOIaWLCM_20241126_121650.jpg",
         type:"analgesic",
         price:360
+    },
+    {
+        id:8,
+        name:"Лізиноприл",
+        image:"images/BOHCT9bSxpPX16ybx5bWsKhlPmM6jQp8juPBHwZm-cover-big.jpg",
+        type:"antihypertensive",
+        price:107
+    },
+    {
+        id:9,
+        name:"Німесіл",
+        image:"images/7415-1009-big-1500x1500-826a.jpg",
+        type:"analgesic",
+        price:310
     }
 ];
+// let response= await fetch("products.json")
+// let products= await response.json()
 let cart=JSON.parse(localStorage.getItem("cart"))||[];
 let productsContainer= document.querySelector(".cards-div");
 let btnGroup= document.querySelector(".dropdown-menu")
+let heading= document.querySelector(".name-page")
 
 function renderProducts(items) {
     productsContainer.innerHTML = ""
@@ -117,6 +135,7 @@ function setupFilterButtons(){
             e.preventDefault()
             let category=productsMap[button.innerHTML]
             applyFilters(category)
+            heading.innerHTML = `<h1>${button.innerHTML}</h1>`
         }
     ) 
     }

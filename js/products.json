@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "name":"Активоване вугілля",
+        "imege":"imeges/1189907e-97d8-4b80-8d84-aef70cd4c70f.webp",
+        "type":"antiviral",
+        "price":100
+    },
+    {
+        "id":2,
+        "name":"Новирін",
+        "imege":"imeges/img_0.webp",
+        "type":"antiviral",
+        "price":500
+    },
+    {
+        "id":3,
+        "name":"Парацетамол",
+        "imege":"imeges/999_3_10.jpg",
+        "type":"analgesic",
+        "price":101
+    },
+    {
+        "id":4,
+        "name":"Золофт",
+        "imege":"imeges/img_0 (1).webp",
+        "type":"antidepressant",
+        "price":660
+    },
+    {
+        "id":5,
+        "name":"Адаптол",
+        "imege":"imeges/4750258314515.webp",
+        "type":"antidepressant",
+        "price":400
+    },
+    {
+        "id":6,
+        "name":"Фітофорте Пробіотик",
+        "imege":"imeges/shopping.webp",
+        "type":"antibiotic",
+        "price":350
+    },
+    {
+        "id":7,
+        "name":"Лірика",
+        "imege":"imeges/26059_lOIaWLCM_20241126_121650.jpg",
+        "type":"analgesic",
+        "price":360
+    },
+    {
+        "id":8,
+        "name":"Лізиноприл",
+        "imege":"imeges/BOHCT9bSxpPX16ybx5bWsKhlPmM6jQp8juPBHwZm-cover-big.jpg",
+        "type":"antihypertensive",
+        "price":107
+    }
+]
