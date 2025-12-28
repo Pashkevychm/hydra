@@ -6,7 +6,7 @@ let cart=JSON.parse(localStorage.getItem("cart"))||[];
 function renderCart() {
     cartContainer.innerHTML = ""
     if (cart.length == 0) {
-        cartContainer.innerHTML = '<p>Ваш кошик порожній</p>';
+        cartContainer.innerHTML = '<p class="p_kosh">Ваш кошик порожній</p>';
         totalElement.innerText="0 грн"
         return;
     }
